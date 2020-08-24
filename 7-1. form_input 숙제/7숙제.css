@@ -1,0 +1,62 @@
+body {
+    background-color: #373737;
+    margin:0;
+}
+
+.container {
+
+    margin: auto;
+    max-width: 400px;
+    background-color: white;
+    padding: 40px;
+}
+
+h3 {
+    margin: 5px 3px;
+    color: #636363;
+}
+
+input[type=text],
+input[type=email] {
+    border: 2px solid #E9E9E9;
+    height: 40px;
+    border-radius: 8px;
+    width: 100%
+}
+.name-first {
+    width:48%;
+    float: left;
+}
+
+.name-last {
+    width:48%;
+    float:left;
+    margin-left: 4%;
+}
+
+.message-box {
+    width:100%;
+}
+
+.checkbox-box {
+    float: left;
+    width:15px;
+    height: 15px;
+}
+
+.checkbox-text {
+    float: left;
+    margin:0;
+}
+
+.contect-submit {
+    float: right;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #FFBF35;
+    color:white;
+    width: 100px;
+    height: 30px;
+}
+
+

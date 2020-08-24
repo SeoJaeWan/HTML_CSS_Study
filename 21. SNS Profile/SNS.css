@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+}
+
+.white-box {
+    background-color: white;
+    padding: 35px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 2px 1px #eee;
+    /* 
+        첫 번째 두 번째 값은 x,y축 이동량 
+        세 번째는 blur 네 번째는 spread 
+        마지막은 색상
+    */
+
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    /* 글자 간격 */
+}
+
+.header-box {
+    max-width: 1200px;
+}
+
+.location {
+    display: flex;
+    color: #70B9F7;
+}
+
+.location i {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.color-button {
+    color: whitesmoke;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bg-skyblue {
+        background-color: #70B9F7;
+}
+
+.bg-dark {
+    background-color: #282C34;
+}
+
+
+.lines {
+    width: 1px;
+    height: 150px;
+    background-color: #E8E8E8;
+    margin: 0px 5% 0px 11%;
+}
+
+.padding-rl {
+    padding: 0px 5px 0px 5px;
+}
+.info-box {
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.info-box h4{
+    margin-bottom: 15px;
+}
+
+.info-box span {
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    padding:3px 12px 5px 12px;
+    margin-left: 10px;
+    margin-bottom: 5px
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-box {
+        padding-left: 8%;
+    }
+
+    .info-box {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .info-box p {
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+    .profile-info {
+        margin-bottom: 40px;
+    }
+
+    .lines {
+        display: none;
+    }
+}

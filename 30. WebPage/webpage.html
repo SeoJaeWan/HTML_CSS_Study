@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="webpage.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+
+<body>
+    <div class="board-container">
+        <div class="nav-container">
+            <div class='nav-position nav-icon'>
+                <div><i class="fas fa-home fa-lg"></i></div>
+
+                <div><i class="fas fa-headphones fa-lg"></i>
+                </div>
+
+                <div><i class="fas fa-flag fa-lg"></i>
+                </div>
+
+                <div><i class="fas fa-chart-pie fa-lg"></i>
+                </div>
+
+            </div>
+            <div class='nav-position nav-text'>
+                <p>Home</p>
+                <p>Services</p>
+                <p>Alerts</p>
+                <p>Stats</p>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class='main-header'>
+                <div class='main-input'>
+                    <input type="text" placeholder="Search">
+                    <div class='input-box'>
+                        <i class="fas fa-search fa-xs"></i>
+                    </div>
+                </div>
+
+                <div class='main-sub'>
+                    <div><i class="fas fa-bell fa-sm"></i></div>
+                    <div><i class="fas fa-envelope fa-sm"></i></div>
+                    <p>SeoJaWan</p>
+                </div>
+            </div>
+
+            <div class='main-dashboard'>
+                <h3 class='remove-margin main-title'>DashBoard</h3>
+                <div class="main-board">
+                    <div class="board-box" style='border-left-color: #8DD0EB;'>
+                        <div class='board-text'>
+                            <h4>Earnings (Monthly)</h4>
+                            <h3>$400,000</h3>
+                        </div>
+                        <div class='board-icon'>
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                    </div>
+                    <div class="board-box" style='border-left-color: #40C85B;'>
+                        <div class='board-text'>
+                            <h4>Earnings (Monthly)</h4>
+                            <h3>$800,000</h3>
+                        </div>
+                        <div class='board-icon'>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <div class="board-box" style='border-left-color: #4E51B6;'>
+                        <div class='board-text'>
+                            <h4>Earnings (Monthly)</h4>
+                            <h3>13</h3>
+                        </div>
+                        <div class='board-icon'>
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="board-box" style='border-left-color: #FFCB55;'>
+                        <div class='board-text'>
+                            <h4>Earnings (Monthly)</h4>
+                            <h3>26</h3>
+                        </div>
+                        <div class='board-icon'>
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class='second-box'>
+                    <div class="earnings-box box-shadow">
+                        <div class='sub-title'>
+                            <h4 class='remove-margin'>Earnings Overview</h4>
+                        </div>
+                        <div class='earnings-chart'>
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class='sub-title'>
+                            <h4 class='remove-margin'>Tasks</h4>
+                        </div>
+
+                        <div class="task-item ">Brrowed Item</div>
+                        <div class="task-item">Trello requests</div>
+                        <div class="task-item">Marked Comments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
+</body></html>

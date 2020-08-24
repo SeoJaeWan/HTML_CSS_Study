@@ -1,0 +1,98 @@
+.button {
+
+    padding: 10px;
+
+    background-color: skyblue;
+    color: white;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    25% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.button:hover{
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
+.icon{
+  margin: 150px auto;
+  text-align: center;
+  font-size: 70px;
+  width: 84px;
+  cursor: pointer;
+    
+}
+
+@keyframes icons{
+    0%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(45deg) scale(1.5);
+    }
+}
+
+.icon:hover{
+    animation-name: icons;
+    animation-duration: 1s;
+}
+
+.box{
+  width: 300px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  text-align: center;
+  z-index: 5;
+  transform: translateX(-250px);
+  transition: all 1s;   
+}
+
+.manu {
+    transform: translateX(120px);
+    transition: all 1s;   
+}
+
+.hiden{
+    transform: translateX(-400px);
+    transition: all 1s;   
+}
+
+@keyframes menu{
+    50%{
+        transform: translateX(0px);
+        text-align: center;
+    }
+}
+
+.box:hover{
+    transform: translateX(0px);
+}
+
+.box:hover p{
+    transform: translateX(0px);
+}

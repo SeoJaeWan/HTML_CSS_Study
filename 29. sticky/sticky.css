@@ -1,0 +1,32 @@
+.grey{
+    background-color:black;
+    height: 2000px;
+    margin-top:600px;
+    margin-bottom: 1600px;
+}
+
+.sticky{
+    position: sticky;
+    top:100px;
+    /*
+        스크롤 될 동안만 fixed 해줌
+        당연 익플은 호환 X 따로 라이브러리 설치 필요
+    */
+    
+    width:500px;
+    float:right;
+
+}
+
+.left-text{
+    float:left;
+    color:white;
+    padding:20px;
+}
+
+/*
+    sticky는 좌표 속성 (top: 100px)과 함께 사용해야함
+    부모 박스가 더 길어야 잘 적용됨
+
+    opacity가 스크롤에 따라 감소하고 하는건 자바스크립트를 쓰면됨 ㅎㅎ
+*/

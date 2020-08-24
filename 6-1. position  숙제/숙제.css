@@ -1,0 +1,139 @@
+body {
+    margin: 0px;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(/title.PNG), url(/title.PNG);
+    /* 
+        background-image 다음에 url을 사용하면 배경화면으로 이미지를 사용 
+        여러개를 겹치고 싶을 경우엔 url(), url(); 이런식으로 하면 된다.
+    */
+    background-size: cover;
+    /*
+        배경이 지정된 사이즈에서 커질경우 짤리는건 문제없지만,
+        커지는 것은 방지하고 싶은 경우 cover를 사용  
+        -> 반응형 웹에서 많이 사용
+    
+        contain은 그림이 짤리지 않게 설정
+        -> cover 반대     
+    */
+    background-repeat: no-repeat;
+    /*
+        배경이 꽉차있을때 여백이 있을경우 반복되는데 repeat를 사용하면 
+        반복되는 것을 방지한다.      
+    */
+    background-position: center;
+    /*
+        배경이 어디서부터 채워질지 설정하는 것
+    */
+    background-attachment: inherit;
+    /*
+        스크롤시 백그라운드 옵션
+    */
+
+    padding-top: 150px;   
+    /*
+        텍스트를 위해서 h4가 들어가 있는 div에 margin-top:150px을 주면
+        배경도 동일하게 150px 이동하는 데, 
+        박스들의 테두리가 만나면 margin이 합쳐집니다.
+        이는 버그이며 이를 해결하기 위해 부모 클래스에서 
+        padding-top으로 지정하였다.
+     */
+}
+
+.main-title {
+    color:white;
+
+    font-size: 30px;
+}
+
+
+
+.main-content {
+    padding:20px;
+    color:white;
+    font-size: 20px;
+}
+
+.main-title-box {
+        text-align: center;
+}
+
+.main-button {
+    padding:10px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    
+    display: block;
+    margin:auto;
+    
+    position: relative;
+    top: 10px;
+}
+
+.position {
+    position:relative;
+    /*
+        position 설정을 위해서 사용하는 속성으로
+        default로는 static(비활성화)가 되어있다.
+        
+        relative는 원래의 위치에서 부터 좌표를 변경시켜 준다.
+        
+        fixed는 화면을 기준으로 삼고 고정이 된다. => 네비게이션바 사용시 사용
+        
+        absolute는 기준점이 자신의 부모 div 박스가 된다.
+        => 기준으로 삼을 부모에게 position:relative를 할당한다.
+        => 다른 요소에 영향을 받지 않고 위치를 지정하고 싶을 경우 사용한다.
+        => 그림과 글씨를 겹칠때도 사용한다.
+        
+    */
+    top:100px;
+    /* 
+        top bottom right left는 모두 좌표 속성이라고 하는데,
+        먼저 position이 지정되야 사용이 가능하다.
+    
+        margin과 다르게 요소가 독립적으로 이동한다.
+        => margin은 영역이 있다.
+    */
+}
+
+.position2 {
+    position: absolute;
+    
+    left:0;
+    right: 0;
+    margin:auto;  /* margin-left, margin-right가 auto */
+    width:100px;
+    
+    /*
+        position을 absolute로 지정하면 margin:auto만으론 가운데 정렬이
+        되지 않는다.
+    
+        이를 가운데 정렬하기 위해서 left:0, right:0, width:100px이라는 
+        추가 요소가 필요하다.
+    
+        => 여기서 width는 적절하게 크기에 맞게 지정하면 된다.
+    */
+}
+
+.main-info {
+    width:400px;
+    background-color:#EDEDED;
+    position: absolute;
+    text-align: center;
+    
+    left: 0;
+    right:0;
+    margin:auto;
+    bottom:200px;
+}
+
+.main-info-title {
+    position: relative;
+    display: block;
+    margin: auto;
+    
+}

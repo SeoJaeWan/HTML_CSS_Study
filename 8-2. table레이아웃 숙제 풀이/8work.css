@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 800px;
+    background-color: aquamarine;
+    padding: 15px;
+}
+
+
+.cart-form-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.cart-table {
+    border-collapse: collapse;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+}
+
+.cart-table td,
+.cart-table th {
+    padding: 7px;
+    border-bottom: 1px solid #c2d3de;
+}
+.cart-item {
+    text-align: left;
+    width:50%;
+    /*
+        table에서의 width는 노력형 width다
+        최대한 설정한거에 맞게 설정된다.
+    */
+}

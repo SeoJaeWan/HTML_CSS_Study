@@ -1,0 +1,65 @@
+.btn {
+    padding: 10px;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-brown{
+    background-color: coral;
+    color: white;
+}
+/*
+    여러 개의 버튼 디자인에 색만 바꾸게 하고 싶을 경우 따로 class만든다.
+    불변적인 스타일은 대표적인 class 명을 사용하고
+    가변적인 스타일은 따로 class를 만들어 적용한다.
+*/
+
+.btn-red{
+    background-color: red;
+    color: white;
+}
+
+.btn:hover{
+    background-color: chocolate;
+}
+
+.btn:focus{
+    background-color: red;
+}
+
+.btn:active{
+    background-color: brown;
+}
+/*
+    .btn뒤에 : 뒤에는 Pseudo-class가 들어간다. 
+    이는 버튼의 상태를 나타낸다.
+
+    hover는 마우스를 올릴때,
+    focus는 클릭 후 커서가 찍혀있는 상태를 말한다.
+    active는 버튼을 클릭 중일때를 말한다.
+    위 세 개는 서순이 중요하다. focus가 active 다음에 오거나 하면 
+    문제가 생길수있다.
+*/
+
+.custom-link{
+    text-decoration: none;
+}
+/*
+    text-decoration은 link의 밑줄을 나타낸다.
+*/
+
+.custom-link:link {
+    color:black;
+}
+/*
+    link는 방문 전 link를 말하는 Pseudo-class이다.
+*/
+.custom-link:visited {
+    color:red;
+}
+/*
+    visited는 방문 후 link를 말하는 Pseudo-class다
+*/

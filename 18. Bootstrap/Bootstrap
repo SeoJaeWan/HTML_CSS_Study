@@ -1,0 +1,22 @@
+부트스트랩
+
+1. 3버전은 IE8+ 버전
+2. 4버전은 IE11+ 버전에서 사용되고 사용 방법은 동일하다.
+
+장점 
+1. 쉬운 반응형 웹 개발
+2. 빠른 퍼블리싱
+3. 끗
+
+설치 
+getbootstrap.com -> get Start 
+-> Starter template에 있는 bootstrap.css, jquery.js, bootstrap.js를
+   사용할 html 파일에 추가한다. ( CDN 방식 ) 
+
+
+혹은 걍 css,js 파일 다운 받아서 넣어도 됨 ㅎ.
+
+공부할 땐 가져와서 쓰고 실제로 쓸땐 다운받아라 재완아!
+
+사용
+get start 누른 곳에서 Document -> Components 에서 원하는 요소 복붙!

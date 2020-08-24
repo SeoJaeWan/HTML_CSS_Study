@@ -1,0 +1,296 @@
+html,
+body {
+    margin: 0;
+    height: 100%
+}
+
+.remove-margin {
+    margin: 0;
+}
+
+.sub-title {
+    padding: 10px;
+    border: 1px solid #E6E6E6;
+}
+
+.board-container {
+    position: relative;
+}
+
+.nav-container {
+
+    position: absolute;
+
+    color: white;
+
+    height: 100%;
+    background-color: #494CB4;
+    width: 55px;
+
+    z-index: 4;
+
+    transition: all 1s;
+}
+
+.nav-position {
+    position: sticky;
+    top: 30px;
+    display: flex;
+    font-size: 15px;
+
+    height: 250px;
+
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav-text {
+    transform: translateX(-150px);
+    visibility: hidden;
+}
+
+.nav-text p {
+    margin: 0;
+}
+
+.nav-container:hover {
+    width: 150px;
+}
+
+.nav-container:hover .nav-icon {
+    float: left;
+    transform: translateX(15px);
+    animation-name: move-icon;
+    animation-duration: 0.5s;
+}
+
+@keyframes move-icon {
+    0% {
+        transform: translateX(25px);
+    }
+
+    100% {
+        transform: translateX(15px);
+    }
+}
+
+.nav-container:hover .nav-text {
+    visibility: visible;
+    transform: translateX(0px);
+    animation-name: move-text;
+    animation-duration: 0.5s;
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateX(-150px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.main-container {
+    margin-left: 55px;
+    position: relative;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-input {
+
+    display: flex;
+
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.main-input input {
+    border: 1px solid grey;
+    border-radius: 5px 0px 0px 5px;
+
+    padding: 5px;
+
+    height: 18px;
+    width: 100px;
+
+    transition: all 1s;
+}
+
+.input-box {
+    background-color: #343A40;
+    border-radius: 0px 5px 5px 0px;
+    width: 20px;
+    height: 20px;
+
+    padding: 2px 5px 8px 5px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.main-input input:focus {
+    width: 200px;
+}
+
+.main-sub {
+    display: flex;
+
+    font-size: 15px;
+    color: #808080;
+
+    width: 150px;
+
+    padding-top: 10px;
+    padding-right: 25px;
+
+    justify-content: space-between;
+
+}
+
+.main-sub p {
+    display: inline;
+    margin: 0;
+}
+
+.main-dashboard {
+
+    width: 99%;
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FAFAFA;
+    box-shadow: inset 0px 3px rgb(242, 242, 242);
+}
+
+.main-title {
+    margin-left: 10px;
+}
+
+.main-board {
+    display: flex;
+
+    margin-bottom: 20px;
+    padding: 10px;
+
+    width: 99%;
+
+    justify-content: space-between;
+}
+
+.board-box {
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 270px;
+    height: 125px;
+
+    background-color: white;
+    border: outset white;
+    border-radius: 5px;
+    border-left-width: 4px;
+
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+
+    box-shadow: 2px 3px 0px 1px rgba(0, 0, 0, 0.075);
+
+    box-sizing: border-box;
+
+    padding: 15px;
+    color: #83878B;
+}
+
+.board-text h5 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.board-text h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+
+    color: #342E2E;
+}
+
+.board-icon {
+    font-size: 30px;
+
+    margin-top: 25px;
+    margin-right: 8px;
+}
+
+.second-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.earnings-box {
+    border: 1.5px solid #E6E6E6;
+    border-radius: 5px;
+
+    box-shadow: 2px 3px 0px 1px rgba(0, 0, 0, 0.075);
+    width: 66%;
+    height: 100%;
+}
+
+.earnings-chart {
+    border: 1px solid #E6E6E6;
+    background-color: white;
+    padding: 5px;
+}
+
+.task-box {
+    width: 30%;
+    height: 100%;
+
+    border: 1.5px solid #E6E6E6;
+    border-radius: 5px;
+
+    box-shadow: 2px 3px 0px 1px rgba(0, 0, 0, 0.075);
+}
+
+.task-item {
+    border: 1px solid #E6E6E6;
+    padding: 15px;
+
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-input input:focus {
+        width: 150px;
+    }
+
+    .main-board,
+    .second-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .board-box {
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .earnings-box,
+    .task-box {
+        width: 100%;
+        height: 100%;
+
+        margin-bottom: 15px;
+    }
+}

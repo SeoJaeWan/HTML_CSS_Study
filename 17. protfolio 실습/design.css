@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main-header {
+    background-image: linear-gradient(to bottom, #499add, #4e61c0);
+    /* 그라데이션 효과를 주기위해서 linear-gradient를 사용하면 된다. */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+
+.main-text {
+    padding: 40px;
+}
+
+.main-text h1,
+.main-text p {
+    color: antiquewhite;
+}
+
+.img-box {
+    width: 300px;
+}
+
+.dark-button {
+    width: 150px;
+    height: 40px;
+    background-color: #343940;
+    border: none;
+    color: whitesmoke;
+    border-radius: 5px;
+
+    transition: all 1s;
+}
+
+.dark-button:hover {
+    background-color: #636e72;
+}
+
+.dark-button:active {
+    background-color: #636e72;
+}
+/* 커서가 찍혔을 때 */
+
+.show-portfolio {
+    padding: 60px;
+}
+
+.show-text {
+    text-align: center;
+}
+
+.show-button {
+    width: 150px;
+    margin: auto;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.main-services {
+    text-align: center;
+    color: whitesmoke;
+    background-image: linear-gradient(to bottom, #499add, #4e61c0);
+    height: 15%;
+    padding: 50px;
+}
+
+
+.service-kind {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-kind p {
+    font-size: 10px;
+}
+
+.kind-box {
+    width: 25%;
+    min-width: 220px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.kind-box i {
+    width: 70px;
+    height: 70px;
+    background-color: whitesmoke;
+    color: #4A80CF;
+    padding-top: 21px;
+    border-radius: 35px;
+    box-sizing: border-box
+}
+
+.sub-title {
+    margin: 0;
+    color: #E9C03C;
+    font-weight: 900;
+    text-align: center;
+}
+
+.main-title {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.first {
+    background: url(portfolio1.jpg);
+}
+
+.second {
+    background: url(portfolio2.jpg);
+}
+
+.third {
+    background: url(portfolio3.jpg);
+}
+
+.fourth {
+    background: url(portfolio4.jpg);
+}
+
+.portfolio-container {
+    padding-top: 100px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.portfolio-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+
+    margin: auto;
+}
+
+.portfolio-box {
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    min-height: 250px;
+}
+
+.white-box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 0px solid white;
+    transition: all 1s;
+}
+
+.portfolio-box:hover .white-box {
+    border: 20px solid white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-header {
+        flex-wrap: wrap;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .img-box {
+        margin: auto;
+        margin-bottom: -75px;
+    }
+
+    .portfolio-box {
+        width: 1000%;
+    }
+}

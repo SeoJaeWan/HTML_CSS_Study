@@ -1,0 +1,33 @@
+.video-box {
+    height: 500px;
+    width:100%;
+    overflow: hidden;
+    position:relative;
+}
+
+.video-container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    
+    z-index: 0;
+    /* 배경이기 때문에 z-index 를 0으로 줘서 제일 아래에 깔리게 한다.*/
+}
+
+/*  궁극의 가운데 정렬  
+    position:relative -> 부모 박스
+    position:absolute -> 여기서 부터 자식
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+*/
+
+.video-title{
+    color:white;
+    position: absolute;
+    font-size: 30px;
+    width:100%;
+    text-align: center;
+    top:20%;
+}

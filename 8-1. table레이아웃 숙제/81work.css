@@ -1,0 +1,45 @@
+body{
+margin:0;
+}
+
+.container {
+    width:800px;
+    height: 800px;
+
+    padding:50px;
+    
+    box-sizing: border-box;
+    
+    background-color: #B2CCD6
+}
+
+.shopping-title {
+    color : #3E5F81;
+}
+
+.shopping-main {
+    border-radius: 5px;
+    background-color: white;
+    
+    border-collapse: collapse;
+    
+    width:700px;
+}
+
+.shopping-main th,.shopping-main td{
+    border-bottom: 1px solid #B2CCD6;
+    padding:10px 20px;
+     vertical-align: middle;
+}
+
+.shopping-main h3, .shopping-main p, .shopping-main h4 {
+    margin:0px;
+}
+
+.main-align{
+    text-align: right;
+}
+
+.main-last{
+    color:#28496F;
+}

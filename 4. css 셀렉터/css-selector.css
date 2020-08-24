@@ -1,0 +1,65 @@
+
+.container {
+    width:800px;
+    margin: auto;
+}
+
+.blog-content {
+    width:80%;
+    height: 200px;
+    float:left;    
+}
+
+.blog-image {
+    width:20%;
+    height: 200px;
+    float:left;
+}
+
+.blog-profile {
+    float:left;
+    margin-left: 10px;
+    margin-top:5px;
+}
+
+.blog-pic {
+    float:left;
+}
+
+.blog-title {
+    
+}
+
+.li-inline li{
+    display: inline-block;
+    /* 
+        selector의 기능을 사용한것으로
+        li-inline 아래에 있는 모든 li 태그에 display:inline-block을 설정
+    
+        selector를 주는 방법은 꽤 다양한데
+        
+        .li-inline>li
+        
+        로 주는 방법로 있다.
+        이 경우 li-inline 클래스 바로 아래에 있는 태그를 선택할 때 사용
+        
+        @ 재완아 설마 태그라고 해서 태그만 된다는 1차원적인 생각은 안하겠지?
+          당연히 class도 된다.
+    */
+    width:100px;
+    text-align: center;
+}
+
+.li-inline a {
+    text-decoration: none;
+    /* 밑줄 제거 */     
+    color:black;
+}
+
+
+.navbar {
+    width:800px;
+    margin:auto;
+    margin-bottom: 20px;
+    padding:10px;
+}

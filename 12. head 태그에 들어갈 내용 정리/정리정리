@@ -1,0 +1,38 @@
+HTML 파일은 head 태그가 없으면 안된다
+
+head 태그에 들어가는 중요한 태그들을 정렬해 보겠다.
+
+1. 각종 css 파일들
+
+<link href= 'css/main.css' rel = 'stylesheet'>
+css 파일들을 첨부할 때 링크태그를 집어넣을 수 있다.
+
+2. js 파일들
+
+<script src='어쩌구.js'></script>
+js 파일을 첨부할 떄도 사용한다.
+
+3. 사이트 제목
+
+<title> 네이버입니다. </title>
+사이트 제목을 넣을 수 있다.
+
+4. meta 태그
+
+사이트의 인코딩 형식을 지정할 때 
+<meta charset='UTF-8'>
+
+사이트의 검색 결과 화면에 뜨는 글귀를 수정하고 싶으면
+<meta name='decription' contant='어쩌구저쩌구~' >
+
+description은 구글 검색시 파란 제목으로 뜨는 글귀
+keywords는 검색에 도움을 주는 키워드 등 ( 온라인 마케팅에 사용 )
+
+사이드 초기 zoom레벨이나 폭을 지정해주려면 name = 'viewport'를 쓴다.
+<meta name = 'viewport' content='width=device-width, initial-scale=1.0">
+
+width=device-width는 모바일 기기의 실제 폭으로 렌더링 해달라는 뜻이다.
+즉 실제 접속시 스마트폰 기기의 가로폭을 보고 렌더링하라고 명령하는 부분이다.
+
+inital-scale=1은 접속시의 화면 줌레벨 설정이다.
+viewport는 반응형 웹을 만들 때 사용하는 meta 태그라고 보면된다.

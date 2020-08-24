@@ -1,0 +1,46 @@
+.flex-box {
+    width:100px;
+    height: 100px;
+    background-color: gray;
+    margin:5px;
+}
+
+.flex-container {
+    display: flex;
+    height:300px;
+/*
+    flex는 default가 가로정렬이다.
+*/
+    justify-content: center;
+/* 
+    가운데 정렬(center), 우측정렬(flex-end), 좌측정렬(flex-start),
+    적당한 간격으로 정렬(space-around), 좌우 맨끝정렬(space-between)
+    이 아주 간단하게 가능하다
+*/
+    flex-direction: row;
+    /* column을 주면 세로정렬이 가능하다 default는 row 가로 정렬 */
+    flex-wrap: wrap;
+    /* flex-wrap을 하면 가로폭이 넘치면 자동으로 아래로 내려간다 */
+    
+    align-items: center;
+    /* 
+        상하 가운데 정렬! 이것과 justify-content:center를 사용하면 
+        상하좌우 가운데 정렬!
+    */
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    /* 세로 정렬 */
+}
+
+.nav-box{
+    padding-right: 12px;
+    cursor: pointer;
+}
+.nav-logo {
+    font-size:20px;
+    padding-left: 20px;
+    font-weight: 600;
+}

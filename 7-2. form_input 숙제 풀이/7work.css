@@ -1,0 +1,55 @@
+.form-background {
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding:3%;
+    margin: auto;
+}
+
+.form-white {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+}
+
+.form-input {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+div,
+input,
+textarea {
+    box-sizing: border-box
+}
+
+.form-half {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.form-whole {
+    padding: 10px;
+}
+
+.form-submit {
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+
+    width: 150px;
+    height: 30px;
+
+    margin-left: auto;
+    display: block;
+    margin-right: 10px;
+    /*
+        우측 정렬
+    */
+}

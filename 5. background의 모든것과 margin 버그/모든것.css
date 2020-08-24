@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(/title.PNG), url(/title.PNG);
+    /* 
+        background-image 다음에 url을 사용하면 배경화면으로 이미지를 사용 
+        여러개를 겹치고 싶을 경우엔 url(), url(); 이런식으로 하면 된다.
+    */
+    background-size: cover;
+    /*
+        배경이 지정된 사이즈에서 커질경우 짤리는건 문제없지만,
+        커지는 것은 방지하고 싶은 경우 cover를 사용  
+        -> 반응형 웹에서 많이 사용
+    
+        contain은 그림이 짤리지 않게 설정
+        -> cover 반대     
+    */
+    background-repeat: no-repeat;
+    /*
+        배경이 꽉차있을때 여백이 있을경우 반복되는데 repeat를 사용하면 
+        반복되는 것을 방지한다.      
+    */
+    background-position: center;
+    /*
+        배경이 어디서부터 채워질지 설정하는 것
+    */
+    background-attachment: inherit;
+    /*
+        스크롤시 백그라운드 옵션
+    */
+
+    padding-top: 150px;   
+    /*
+        텍스트를 위해서 h4가 들어가 있는 div에 margin-top:150px을 주면
+        배경도 동일하게 150px 이동하는 데, 
+        박스들의 테두리가 만나면 margin이 합쳐집니다.
+        이는 버그이며 이를 해결하기 위해 부모 클래스에서 
+        padding-top으로 지정하였다.
+     */
+}
+
+.main-title {
+    color:white;
+
+    font-size: 30px;
+}
+
+
+
+.main-content {
+    padding:20px;
+    color:white;
+    font-size: 20px;
+}
+
+.main-title-box {
+        text-align: center;
+}

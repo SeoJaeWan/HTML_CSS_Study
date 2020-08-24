@@ -1,0 +1,45 @@
+Grid 는 반응형으로 요소를 배치한다.
+getbootstrap.com => documentation => layout => grid
+
+grid는 화면을 균일하게 쪼개고 싶을 때 사용한다.
+
+간단하게 
+<div class="container">
+    <div class='row'>
+        <div class="col-4">안녕?</div>
+        <div class="col-4">안녕?</div>
+        <div class="col-4">안녕?</div>
+    </div>
+</div>
+
+위와 같이 사용할 수 있다.
+이것은 div 들을 가로로 균일하게 배치하는 방법
+
+div class = 'row'는 내부를 가로 12개의 선으로 쪼개달라는 뜻과 같다.
+
+div class = 'col-4' 는 그 중에 4개를 채워달라는 뜻이다.
+
+col만 써도 되지만 -4의 장점은 균일한 레이아웃 뿐만아니라 불균일한 레이아웃을 
+쉽게 만들 수 있다는 장점이 있다.
+
+<div class="col-6">안녕?</div>
+<div class="col-2">안녕?</div>
+<div class="col-4">안녕?</div>
+
+총 합이 12만 되면 되니 위와같이 사용할 수 있다.
+
+<div class="col-md-4">안녕?</div>
+<div class="col-md-4">안녕?</div>
+<div class="col-md-4">안녕?</div>
+
+사이에 md를 붙이면 md 사이즈 이상에서만 4 column씩 차지하세요 라는 뜻이 된다.
+
+md 사이즈, 그 외 사이즈에 대해서는 
+getbootstrap grid에서 option에서 확인이 가능하다.
+
+위 col은 flex를 사용하여 만든 것인데, 이는 IE 11 이상버전에서 사용이 가능하다.
+Bootstrap 3버전은 float를 사용하여 만들어, IE 8 이상부터 사용가능하다.
+
+이점을 유의해서 사용하면 될듯함 하지만 디자인은 조금 다를 수 있음 ㅎ 
+
+또 order-first 등을 사용하여 순서도 임의로 설정할 수 있다.

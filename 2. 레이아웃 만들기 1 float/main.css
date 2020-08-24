@@ -1,0 +1,48 @@
+.container {
+    width: 800px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.left {
+    width: 20%;
+    height: 500px;
+    background-color: brown;
+    float: left;
+    /* 
+        요소를 왼쪽/오른쪽 정렬하는 float 속성 
+        float을 사용할 땐 div로 float을 싸매는 박스를 
+        만들어 폭을 지정하는 게 좋다. 
+        그렇게 해야 모바일에서 흘러넘치는(꺠지는) 일이 없다. 
+        float는 공간을 차지하지 않는다. 
+    */
+}                
+
+.center {
+    width: 60%;
+    height: 500px;
+    background-color: cadetblue;
+    float: left;
+}
+
+.footer {
+    width:100%;
+    height: 50px;
+    background-color: gray;
+    clear:both;
+    /*
+        float는 공간을 차지하지 않기때문에 clear를 적용하여 문제가 
+        생기는 것을 방지한다. 
+    */
+}
+
+.right {
+    width:20%;
+    height: 500px;
+    background-color:chocolate;
+    float:left;
+}
